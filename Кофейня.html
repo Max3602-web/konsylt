@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma Coffee - Уютная кофейня</title>
+    <style>
+        :root {
+            --primary: #6F4E37; /* Цвет кофе */
+            --light: #F9F6F0;
+            --dark: #2C221E;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+
+        header {
+            background-color: var(--dark);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--light);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://unsplash.com') center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            color: var(--primary);
+            font-size: 2.5rem;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 2px dashed #DDD;
+            padding: 15px 0;
+        }
+
+        .menu-item span.price {
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .contact-info {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--dark);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#about">О нас</a>
+            <a href="#menu">Меню</a>
+            <a href="#contact">Контакты</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Aroma Coffee</h1>
+        <p>Идеальное место для вашего утра. Свежая обжарка и лучший кофе в городе.</p>
+    </section>
+
+    <section id="about" class="container">
+        <h2>Наша история</h2>
+        <p style="text-align: center; font-size: 1.1rem;">Мы варим кофе с любовью с 2026 года. Наша кофейня предлагает уютную атмосферу, зерна класса спешелти, выпечку собственного приготовления и профессиональных бариста, которые знают всё о правильной экстракции.</p>
+    </section>
+
+    <section id="menu" style="background-color: #fff; padding: 50px 0;">
+        <div class="container">
+            <h2>Популярное меню</h2>
+            <div class="menu-item">
+                <div>
+                    <strong>Эспрессо</strong>
+                    <p style="margin: 5px 0; color: #777;">Классический насыщенный черный кофе</p>
+                </div>
+                <span class="price">150 руб.</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <strong>Капучино</strong>
+                    <p style="margin: 5px 0; color: #777;">Эспрессо с плотной молочной пеной</p>
+                </div>
+                <span class="price">200 руб.</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <strong>Латте</strong>
+                    <p style="margin: 5px 0; color: #777;">Нежный кофейный напиток с большим количеством молока</p>
+                </div>
+                <span class="price">220 руб.</span>
+            </div>
+            <div class="menu-item">
+                <div>
+                    <strong>Круассан классический</strong>
+                    <p style="margin: 5px 0; color: #777;">Воздушная выпечка из французского масла</p>
+                </div>
+                <span class="price">130 руб.</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Контакты</h2>
+        <div class="contact-info">
+            <p>📍 <strong>Адрес:</strong> Санкт-Петербург, Невский проспект, 1</p>
+            <p>🕒 <strong>Часы работы:</strong> Ежедневно с 08:00 до 22:00</p>
+            <p>📞 <strong>Телефон:</strong> <a href="tel:+78120000000" style="color: var(--primary); text-decoration: none;">+7 (812) 000-00-00</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Aroma Coffee. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
